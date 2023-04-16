@@ -12,4 +12,9 @@ func main() {
 		panic(err)
 	}
 	fmt.Println(fps)
+	fc, err := avtool.GetFrameCount("./testdata/video.mp4")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(fc)
 }
